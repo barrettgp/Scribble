@@ -1,3 +1,5 @@
+use scribble_app::make_window;
+
 fn main() {
-    println!("Hello, world!");
+    make_window()
 }

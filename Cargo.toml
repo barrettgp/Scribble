@@ -1,5 +1,5 @@
 [workspace]
-members = []
+members = ["crates/scribble-app"]
 
 [package]
 name = "scribble"
@@ -11,5 +11,9 @@ all = "warn"
 pedantic = "warn"
 
 [workspace.dependencies]
+scribble-app = { path = "crates/scribble-app" }
+winit = "0.30.11"
+wgpu = "25.0.2"
 
 [dependencies]
+scribble-app.workspace = true
